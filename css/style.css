@@ -156,18 +156,30 @@ ul {
 --------------------------*/
 
 .site-btn {
-	font-family: "Oswald", sans-serif;
 	font-size: 15px;
-	color: #19181f;
+	color: white;
 	display: inline-block;
-	text-transform: uppercase;
 	background: #00B4BB;
-	padding: 15px 50px;
-	font-weight: 500;
+	border: 1px solid #00B4BB;
+	box-shadow: 0 2px 0 #00888f, 3px 2px 4px #00B4BB;
+	padding: 1rem;
+	/*font-weight: 500;*/
 	letter-spacing: 1px;
 	min-width: 170px;
 	text-align: center;
-	border: none;
+	cursor: pointer;
+	transition: all 150ms linear;
+	margin-bottom: 2rem;
+	border-radius: .2rem;
+}
+
+.site-btn:hover, .site-btn:focus {
+	background: #00888f;
+	border: 1px solid rgba(0, 0, 0, 0.05);
+	box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.2);
+	text-decoration: none;
+	text-shadow: -1px -1px 0 #5e7aaf;
+	transition: all 250ms linear;
 }
 
 .site-btn.btn-2 {
@@ -183,11 +195,11 @@ ul {
 	padding: 14px 50px;
 }
 
-.site-btn:hover,
-.site-btn:focus {
-	text-decoration: none;
-	outline: none;
-}
+/*.site-btn:hover,*/
+/*.site-btn:focus {*/
+/*	text-decoration: none;*/
+/*	outline: none;*/
+/*}*/
 
 /*------------------
 	Preloder
@@ -841,14 +853,40 @@ ul {
 	Footer section
 --------------------------*/
 .footer-section {
-	background: #19181f;
+	background: #292A2C;
 	text-align: center;
+}
+
+.footer-copy {
+	background: black;
+	font-size: .8rem;
+	padding: .4rem 0;
 }
 
 .footer-section h2 {
 	color: #3772B7;
 	font-size: 14px;
 	padding: 18px 0;
+}
+
+.form-control {
+	border-bottom: 1px solid white !important;
+	border-top: none !important;
+	border-left: none !important;
+	border-right: none !important;
+	border-radius: 0 !important;
+	padding-left: 0 !important;
+	background: transparent !important;
+	margin-bottom: 1rem;
+}
+
+.form-control:focus {
+	border-bottom: 1px solid #00B4BB !important;
+	box-shadow: none !important;
+}
+
+.form-group {
+	margin-bottom: 2rem !important;
 }
 
 /*=========================
@@ -1361,7 +1399,6 @@ ul {
 .bar-inner span {
 	position: absolute;
 	right: 0;
-	font-weight: bold;
 	top: -35px;
 	font-family: "Oswald", sans-serif;
 	color: #333;
